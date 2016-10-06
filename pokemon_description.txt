@@ -1,0 +1,31 @@
+The classification goal is to predict the Total variable (>500 or not).
+
+variables:
+
+# other attributes:
+1 - Number: ID for each pokemon
+2 - Name: Name of each pokemon
+
+# pokemon information:
+3 - Type.1 (categorical: 18 types): Each pokemon has a type, this determines weakness/resistance to attacks
+4 - Type.2 (categorical: 19 types, "NO" means this pokemon is not dual type): Some pokemon are dual type and have 2
+5 - HP (numeric): hit points, or health, defines how much damage a pokemon can withstand before fainting
+6 - Attack (numeric): the base modifier for normal attacks (eg. Scratch, Punch)
+7 - Defense (numeric): the base damage resistance against normal attacks
+8 - SP_Atk (numeric): special attack, the base modifier for special attacks (e.g. fire blast, bubble beam)
+9 - SP_Def (numeric): the base damage resistance against special attacks
+10 - Speed (numeric): determines which pokemon attacks first each round
+11 - Generation (categorical: "1","2","3","4","5","6"): the number of the generation (as an integer) each pokemon belongs to
+12 - Legendary (categorical: "FALSE", "TRUE"): whether the pokemon is legendary or not
+
+# output variable
+13 - Total (binary: ">500","<=500"): sum of all stats that come after this, a general guide to how strong a pokemon is(similar like combat power(CP)). The larger the value is, the stronger the pokemon is. 
+
+## In this homework, you should use variable 3-13.
+
+## Note: 
+This dataset is not “Pokemon go”. 
+The “Total” value in this dataset ranges from 180 to 780. While the “CP” in “Pokemon go” can be 10.
+
+For more information:
+https://www.kaggle.com/abcsds/pokemon
